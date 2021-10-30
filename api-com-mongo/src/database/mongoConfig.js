@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGODB_URI = "mongodb+srv://apimusic:aa2bb2cc2@cluster0.g8xpx.mongodb.net/Stream?retryWrites=true&w=majority";
+const MONGODB_URI = process.env.MONGODB_URI
 
 const connect = async () => {
   try {

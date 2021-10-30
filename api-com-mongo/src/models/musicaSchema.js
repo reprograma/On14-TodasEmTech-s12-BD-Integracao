@@ -17,10 +17,11 @@ const musicaSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    criadoEm:{
+    criadoEm: {
         type: Date,
-        default: newDate()
-    }
+        default: new Date()
+    },
+
 })
 
 module.exports = mongoose.model("musica", musicaSchema)
