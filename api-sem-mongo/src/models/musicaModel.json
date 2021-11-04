@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "artista": "Djonga",
+        "album": "NU",
+        "titulo": "Vírgula",
+        "ano": 2021
+    },
+    {
+        "id": 2,
+        "artista": "Doja Cat",
+        "album": "Planet Her",
+        "titulo": "Need to Know",
+        "ano": 2003
+    }
+]
