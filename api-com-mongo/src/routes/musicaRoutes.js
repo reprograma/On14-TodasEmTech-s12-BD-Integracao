@@ -1,12 +1,11 @@
-const express = require("express")
+const express = require("express");
+const controller = require("../controller/musicaController");
+const router = express.Router();
 
-const router = express.Router()
+router.get("/todas", controller.obterMusicas);
+router.get("/:id", controller.musicaPorId);
+router.post("/criar", controller.criarMusica);
+router.patch("/atualizar/:id", controller.atualizarMusicaPorId);
+router.delete("/deletar/:id", controller.removerMusica);
 
-const controller = require("../controller/musicaController")
-
-router.get("/all", controller.getAll)
-router.post("/create", controller.createMusic)
-
-router.get("/:id", controller.musicaPorId)
-
-module.exports = router
+module.exports = router;

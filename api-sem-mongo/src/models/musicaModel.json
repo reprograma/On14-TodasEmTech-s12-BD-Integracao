@@ -1,16 +1,16 @@
 [
     {
-        "artista" : "Anita",
-        "album" : "Girl from rio",
-        "titulo": "Girl from rio",
-        "ano" : 2020,
-        "id" : 2
+        "id": 1,
+        "artista": "Djonga",
+        "album": "NU",
+        "titulo": "Vírgula",
+        "ano": 2021
     },
     {
-        "artista" : "Djavan",
-        "album" : "",
-        "titulo": "nem um dia",
-        "ano" : 2003,
-        "id" : 1
+        "id": 2,
+        "artista": "Doja Cat",
+        "album": "Planet Her",
+        "titulo": "Need to Know",
+        "ano": 2003
     }
 ]

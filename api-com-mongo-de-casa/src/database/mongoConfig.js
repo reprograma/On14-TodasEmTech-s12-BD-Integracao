@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGODB_URI = process.env.MONGODB_URI
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const connect = async () => {
   try {
@@ -10,10 +10,10 @@ const connect = async () => {
     });
     console.log("Banco conectado!");
   } catch (error) {
-console.log(error.message);
+    console.log(error.message);
   }
 };
 
 module.exports = {
-    connect
-}
+  connect,
+};
