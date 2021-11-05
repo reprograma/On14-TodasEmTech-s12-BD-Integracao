@@ -24,6 +24,30 @@ const musicaPorId = async (req, res) => {
     }
 }
 
+const musicaPorTitulo = async (req, res) => {
+    try{
+        const musicaEncontrada = await MusicaSchema.find({titulo: new RegExp (req.query.titulo, "i")}) //expressao regular para pesquisar qualquer letra e maiuscula ou minuscula (tipo includes e tolocalupercase)
+        res.status(200).json(musicaEncontrada)
+    }catch(error) {
+        res.status(500).json({
+            message: error.message
+        })
+    }
+}
+
+/*//BUSCA MULTIPLA - perde-se o includes e tolocalupercase - TREINAR ESSA EM CASA
+const busca = async (req, res) => {
+    try {
+        const filtro = await MusicaSchema.find(req.query)
+        res.status(200).json(filtro)
+    } catch (error) {
+        res.status(400).json({
+            mensagem: error.message
+        })
+    }
+}
+*/
+
 const createMusic = async (req, res) => {
     try {
         const musica = new MusicaSchema({
@@ -73,9 +97,45 @@ const updateMusicById = async (req, res) => {
     }
 }
 
+/* MODO DE CODA UPDATE MAIS SIMPLES QUE FAZEM TODA FUNÇÃO DO UPDATE ACIMA
+const updateMusicById = async (req, res) => {
+    try {
+        const musicaAtualizada = await MusicaSchema.findByIdAndUpdate(req.params.id, req.body)
+            res.status(200).json({
+                musica: musicaAtualizada
+            })
+    } catch (error) {
+        res.status(400).json({
+            mensagem: error.message
+        })
+    }
+}
+
+*/
+
+
+const deleteMusicById = async (req, res) => {
+    try {
+        const musicaEncontrada = await MusicaSchema.findById(req.params.id)
+
+        await musicaEncontrada.delete()
+        
+        res.status(200).json({
+            mensagem: `Musica '${musicaEncontrada.titulo}' deletada com sucesso.`
+        })
+
+    } catch (error) {
+        res.status(400).json({
+            mensagem: error.message
+        })
+    }
+}
+
 module.exports = {
     getAll,
     createMusic,
     musicaPorId,
-    updateMusicById
+    updateMusicById,
+    musicaPorTitulo,
+    deleteMusicById
 }
