@@ -2,13 +2,13 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv-safe").config();
 const db = require("./database/mongoConfig");
-const musicRoutes = require("./routes/musicRoutes");
+const artistsRoutes = require("./routes/artistsRoutes");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use("/artists", musicRoutes);
+app.use("/artistas", artistsRoutes);
 
 db.connect();
 

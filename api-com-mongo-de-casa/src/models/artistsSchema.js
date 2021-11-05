@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const musicSchema = new mongoose.Schema({
+const artistsSchema = new mongoose.Schema({
   id: mongoose.Schema.Types.ObjectId,
 
-  artists: {
+  artista: {
     type: String,
     required: true,
   },
@@ -13,14 +13,16 @@ const musicSchema = new mongoose.Schema({
   deslikes: {
     type: Number,
   },
-  musics: {
-    type: Array,
-    required: true,
-  },
+  musicas: [
+    {
+      type: String,
+      required: true,
+    },
+  ],
   album: {
     type: String,
   },
-  year: {
+  ano: {
     type: String,
   },
   creationDate: {
@@ -29,4 +31,4 @@ const musicSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("music", musicSchema);
+module.exports = mongoose.model("artist", artistsSchema);
