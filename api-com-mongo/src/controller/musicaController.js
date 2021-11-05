@@ -40,16 +40,42 @@ const createMusic = async (req, res) => {
         })
 
     } catch(error) {
-        res.status(500).json({
+        res.status(400).json({
             mensagem: error.message,
         })
     }
 }
 
+const updateMusicById = async (req, res) => {
+    try {
+        const musicaEncontrada = await MusicaSchema.findById(re.params.id)
 
+        if(musicaEncontrada){
+            musicaEncontrada.artista = req.body.artista || musicaEncontrada.artista // ou ela vai ser o que seja informado, ou ira permanecer o que esta
+            musicaEncontrada.album = req.body.album || musicaEncontrada.album
+            musicaEncontrada.ano = req.body.ano || musicaEncontrada.ano
+            musicaEncontrada.titulo = req.body.titulo || musicaEncontrada.titulo
+
+            const musicaSalva = await musicaEncontrada.save()
+            res.status(200).json({
+                musica: musicaSalva
+            })
+        }
+        
+        res.status(400).json({
+            mensagem: "Desculpa, mas nao conseguimos encontrar essa musica"
+        })
+
+    } catch (error) {
+        res.status(400).json({
+            mensagem: error.message
+        })
+    }
+}
 
 module.exports = {
     getAll,
     createMusic,
-    musicaPorId
+    musicaPorId,
+    updateMusicById
 }

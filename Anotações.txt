@@ -1,0 +1,35 @@
+CRIAR ESTRUTURA MVC
+
+npm i -D nodemon - o "-D" serve que para indicar o MODO DEV, só mantem na sua maquina, fica mais leve pra subir e nao sobe suas depencias de dev para cliente.
+
+Schema/Model é a mesma coisa
+
+npm i mongoose - instalar via git ferramente de modelagem para mongo
+facilita utilização do banco de dados / instalar dependencia
+
+npm i dotenv-safe - serve ocultar dados sensiveis de publico, vc tem que colocar
+.env no gitignore.
+
+EM MODEL
+chamar o mongoose no model = o new cria uma estancia nova preenchida?
+chamar uma classe e estanciando com Schema e inserir a propriedades
+    o require faz da propriedade obrigatoria
+
+
+AULA QUARTA
+ODM é o Schema
+ORM referencia arquivo de musica ao cantor
+
+Na estrutura do Schema, o "number" qto tiver certeza que é numero, cuidado com os espaços e zeros a esquerda
+
+Propriedades cartão de credito e debito herda a propriedades de cartão
+ORM Mapeamento objeto-relacional é uma técnica de desenvolvimento utilizada para fazer uma relação dos objetos com os dados que eles representam.
+ODM Object Data Model , modela os dados baseado em Orientação a Objeto OOP
+No exemplo do cartao, relaciomos o numero, com cpf e nome (ORM) e modelamos a propriedade recebendo string ou number (ODM)
+
+
+
+
+
+
+
