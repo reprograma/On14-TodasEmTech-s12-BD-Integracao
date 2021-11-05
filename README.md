@@ -505,3 +505,7 @@ Qualquer dúvida pode entrar em contato.
 [Instagram - @isjanebia](https://www.instagram.com/isjanebea/) <br>
 [Linkedin - Beatriz Ramerindo](https://www.linkedin.com/in/beatriz-ramerindo/)<br>
 [Telegran - @littlejanne](https://t.me/littlejanne)
+
+### instalação do Mongo
+
+- [download](https://www.mongodb.com/try/download/community)
