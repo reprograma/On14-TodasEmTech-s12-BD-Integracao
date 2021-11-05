@@ -57,6 +57,3 @@ No exemplo do cartao, relaciomos o numero, com cpf e nome (ORM) e modelamos a pr
 
 
 
-
-
-
