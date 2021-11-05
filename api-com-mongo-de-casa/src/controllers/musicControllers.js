@@ -27,7 +27,13 @@ const createArtist = async (req, res) => {
       deslikes: req.body.deslikes,
       musicas: req.body.musicas
     })
+
+    const artistSaved = await newArtist.save()
+    res.status(201).send(artistSaved)
   } catch (error) {
+    res.status(500).json({
+      mensagem: error.message
+    })
     
   }
 }
@@ -36,4 +42,5 @@ const createArtist = async (req, res) => {
 module.exports = {
   getAll,
   getById,
+  createArtist
 }

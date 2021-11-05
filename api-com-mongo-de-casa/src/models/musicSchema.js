@@ -15,6 +15,6 @@ const musicSchema = new mongoose.Schema({
   musicas: {
     type: Array
   }
-})
+}, { versionKey: false })
 
 module.exports = mongoose.model("music", musicSchema);
