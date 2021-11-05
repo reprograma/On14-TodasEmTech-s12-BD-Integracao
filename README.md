@@ -1,6 +1,6 @@
 # On14-TodasEmTech-s12-BD-Integracao
 
- ### Apresentação
+ ## Apresentação
 
 <br>
 <img src="https://pa1.narvii.com/6542/b759ad59ea88956c1416453d58c22b86cbbbffa9_hq.gif"
@@ -12,14 +12,14 @@
 <br>
 <br>
 
-### Bio
+## Bio
 <br>
 Meu nome é Beatriz, atuo como pessoa desenvolvedora back-end na Creditas e curso ADS no Senac, sou ex-aluna da reprograma . Em 2019 tive que não só iniciar uma transicão de carreira, mas de genero também, então tive que aprender muita coisa até chorar,e durante esse processo eu aprendi muito me conheci melhor.  Gosto de passar meu tempo livre jogando ou vendo um pirata que estica, eu tive um contato muito cedo com a programação e amo por paixão o meu JS.  
 
 <br>
 <br>
 
-### recadinho da professora 
+## recadinho da professora 
  - Bebam água meninas
  - Sinta-se a vontade para fazer perguntas, pode perguntar pelo chat também ou perguntar as monitoras
  - Qualquer pergunta é válida.
@@ -29,7 +29,7 @@ Meu nome é Beatriz, atuo como pessoa desenvolvedora back-end na Creditas e curs
 <br>
 <br>
  
-### Conteúdo da Aula
+## Conteúdo da Aula
  - Introdução ao Banco de Dados
  - SQL vs NoSQL
  - Introdução ao MongoDB
