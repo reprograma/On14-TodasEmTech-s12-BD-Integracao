@@ -1,6 +1,30 @@
 CRIAR ESTRUTURA MVC
+$ mkdir src // criar pasta
+$ cd src // entrar na pasta
+$ touch app.js // criar arquivo
+$ mkdir routes controllers models // criando as 3 pastas
 
-npm i -D nodemon - o "-D" serve que para indicar o MODO DEV, só mantem na sua maquina, fica mais leve pra subir e nao sobe suas depencias de dev para cliente.
+
+CONFIGURANDO SERVIDOR
+$ npm init -y
+$ npm i express
+$ npm i -D nodemon (o "-D" serve que para indicar o MODO DEV, só mantem na sua maquina, fica mais leve pra subir e nao sobe suas depencias de dev para cliente)
+$ touch .gitignore
+$ npm i cors
+
+DEPOIS INSTALAÇÃO
+Alterar no Package.json 
+"start": "nodemon server.js"
+
+Alterar no gitignore
+node_modules/
+
+
+DEPOIS CONFIGURAR SERVER, DAR START
+$npm start
+
+BANCO DE DADOS
+
 
 Schema/Model é a mesma coisa
 
@@ -16,7 +40,10 @@ chamar uma classe e estanciando com Schema e inserir a propriedades
     o require faz da propriedade obrigatoria
 
 
-AULA QUARTA
+
+
+
+************* AULA QUARTA ***************
 ODM é o Schema
 ORM referencia arquivo de musica ao cantor
 
