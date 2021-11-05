@@ -31,7 +31,7 @@ Schema/Model é a mesma coisa
 npm i mongoose - instalar via git ferramente de modelagem para mongo
 facilita utilização do banco de dados / instalar dependencia
 
-npm i dotenv-safe - serve ocultar dados sensiveis de publico, vc tem que colocar
+npm i dotenv-safe - serve ocultar dados sensiveis de publico, vc tem que colocar / usuario senha
 .env no gitignore.
 
 EM MODEL
