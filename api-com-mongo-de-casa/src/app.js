@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+require('dotenv-safe').config()
 const db = require('./database/mongoConfig') // importar data base
 const artistaRoutes = require('./routes/artistaRoutes')
 
