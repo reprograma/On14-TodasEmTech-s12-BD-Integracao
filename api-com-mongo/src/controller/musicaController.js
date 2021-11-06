@@ -72,7 +72,7 @@ const createMusic = async (req, res) => {
 
 const updateMusicById = async (req, res) => {
     try {
-        const musicaEncontrada = await MusicaSchema.findById(re.params.id)
+        const musicaEncontrada = await MusicaSchema.findById(req.params.id)
 
         if(musicaEncontrada){
             musicaEncontrada.artista = req.body.artista || musicaEncontrada.artista // ou ela vai ser o que seja informado, ou ira permanecer o que esta
