@@ -12,6 +12,21 @@ const getAllArtists = async (req, res) => {
   }
 };
 
+const searchAlbum = async (req, res) => {
+  try {
+    const albumFound = await ArtistsSchema.find({
+      album: new RegExp(req.query.album, "i"),
+    });
+    res.status(200).json({
+      message: albumFound,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
+};
+
 const getArtistsById = async (req, res) => {
   try {
     const artistFound = await ArtistsSchema.findById(req.params.id);
@@ -93,6 +108,7 @@ const deleteArtists = async (req, res) => {
 
 module.exports = {
   getAllArtists,
+  searchAlbum,
   createArtists,
   getArtistsById,
   updateArtists,
