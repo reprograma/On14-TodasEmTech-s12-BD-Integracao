@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+require('dotenv-safe').config()
 
-const MONGODB_URI = "mongodb+srv://apimusica:190Thundra@cluster0.gv3lj.mongodb.net/artistas?retryWrites=true&w=majority"
+const MONGODB_URI = process.env.MONGODB_URI
 
 const connect = async () => {
     try {

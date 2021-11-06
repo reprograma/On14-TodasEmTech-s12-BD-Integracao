@@ -3,6 +3,8 @@ const cors = require('cors')
 const db = require('./database/mongoConfig') // importar data base
 const artistaRoutes = require('./routes/artistaRoutes')
 
+
+
 const app = express()
 
 app.use(cors())
