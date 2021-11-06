@@ -3,14 +3,12 @@
         "artista" : "Anita",
         "album" : "Girl from rio",
         "titulo": "Girl from rio",
-        "ano" : 2020,
-        "id" : 2
+        "ano" : 2020
     },
     {
         "artista" : "Djavan",
         "album" : "",
         "titulo": "nem um dia",
-        "ano" : 2003,
-        "id" : 1
+        "ano" : 2003
     }
 ]
