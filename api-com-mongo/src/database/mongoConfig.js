@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URI = "mongodb+srv://apimusica:11aa22aa33aa@cluster0.mt9gn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+const MONGODB_URI = process.env.MONGODB_URI
+
 
 // alt+z
 // <password> = 11aa22aa33aa
