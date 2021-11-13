@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const MusicaSchema = require('../models/musicaSchema')
 const mongoose = require('mongoose')
 
@@ -113,3 +114,9 @@ module.exports = {
     musicaPorTitulo,
     deleteMusicById
 }
+=======
+const express = require('express')
+const router = express.Router()
+
+module.exports =router
+>>>>>>> f9aaf0d46d94497468c5459521a7e22c8331065b
