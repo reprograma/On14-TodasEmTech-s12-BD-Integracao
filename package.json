@@ -1,0 +1,28 @@
+{
+  "name": "On14-TodasEmTech-s12-BD-Integracao",
+  "version": "1.0.0",
+  "description": "<br>\r <img src=\"https://pa1.narvii.com/6542/b759ad59ea88956c1416453d58c22b86cbbbffa9_hq.gif\"\r      alt=\"Chopper Feliz\" width=\"500\"\r />\r <br>\r <br>\r <br>\r <br>\r <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaciarafeio/On14-TodasEmTech-s12-BD-Integracao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaciarafeio/On14-TodasEmTech-s12-BD-Integracao/issues"
+  },
+  "homepage": "https://github.com/Jaciarafeio/On14-TodasEmTech-s12-BD-Integracao#readme",
+  "dependencies": {
+    "cor": "0.0.0",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  }
+}
