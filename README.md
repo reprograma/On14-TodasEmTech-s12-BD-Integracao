@@ -375,7 +375,7 @@ No arquivo .env salvamos as variaveis de ambiente.
 
 ```
 PORT=3000
-MONGODB_URI=mongodb://localhost:27017/reprogramaMusic
+MONGODB_URI=mongodb://localhost:27017/pokemon
 ```
 No arquivo `.env.example` salvamos somente a variavel vazia para que o proximo desenvolvedor que baixar o projeto, saber que precisa definir essas variaveis.
 
@@ -505,3 +505,7 @@ Qualquer dúvida pode entrar em contato.
 [Instagram - @isjanebia](https://www.instagram.com/isjanebea/) <br>
 [Linkedin - Beatriz Ramerindo](https://www.linkedin.com/in/beatriz-ramerindo/)<br>
 [Telegran - @littlejanne](https://t.me/littlejanne)
+
+### instalação do Mongo
+
+- [download](https://www.mongodb.com/try/download/community)
