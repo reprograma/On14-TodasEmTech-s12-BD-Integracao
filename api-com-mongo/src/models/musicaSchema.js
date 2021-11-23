@@ -24,7 +24,7 @@ const musicaSchema = new mongoose.Schema({
     criadoEm: {
         type: Date,
         default: new Date()
-    },
+    }
 
 })
 // musica -> schema/model
