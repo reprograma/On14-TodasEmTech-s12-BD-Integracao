@@ -1,7 +1,5 @@
 const musicas = require('../models/musicaModel.json')
 let id = 2
-
-
 const getAll = (req, res) => { // R
     res.status(200).json(musicas)
 }
@@ -33,14 +31,12 @@ const createMusic = (req, res) => { // C
     return res.status(201).json(musica)
 }
 
-const updateMusic = (req,res) => { // U
-   // encontror que vai ser modificado // ok
+const updateMusic = (req,res) => { // Update
+   // encontrar que vai ser modificado // ok
    // validar os dados da modificação // ok
    // alterar alterar esses dados 
   const id = req.params.id
-   const musicaEncontrada = musicas
-        .find(musica => musica.id== id)
-
+   const musicaEncontrada = musicas.find(musica => musica.id== id)
     if (!musicaEncontrada) {
         return res.status(400).json({
             message: "A requisção possui algum campo invalido."
@@ -65,9 +61,8 @@ const deleteMusic = (req, res) => {
  // encontrar novamente e deletar
 
  const id = req.params.id
- const musicaIdEncontrado = musicas
-      .findIndex(musica => musica.id== id) // indexOf
-
+ const musicaIdEncontrado = musicas.findIndex(musica => musica.id== id) // indexOf
+//indexof localiza a posição da musica no array
   if (!musicaIdEncontrado) {
       return res.status(400).json({
           message: "A requisção possui algum campo invalido."
