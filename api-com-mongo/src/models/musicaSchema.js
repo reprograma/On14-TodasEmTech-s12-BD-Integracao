@@ -4,7 +4,7 @@ const musicaSchema = new mongoose.Schema({
     id: mongoose.Schema.Types.ObjectId,
 
     artista: {
-        type: String,
+        type: String, //colocando unique, esse objeto torna-se único
         required: true
     },
 
@@ -13,7 +13,7 @@ const musicaSchema = new mongoose.Schema({
     },
 
     ano: {
-        type: Number,
+        type: Number
     },
 
     titulo: {
@@ -23,11 +23,11 @@ const musicaSchema = new mongoose.Schema({
 
     criadoEm: {
         type: Date,
-        default: new Date()
+        default: new Date() //new date pega a data atual
     },
 
-})
-// musica -> schema/model
-// musica[s] -> collection/
-
+}) 
+//musica - -> schema/model
+//musica[s] -> collection
+//exportando para o banco - o mongoose cria a collection
 module.exports = mongoose.model("musica", musicaSchema)
